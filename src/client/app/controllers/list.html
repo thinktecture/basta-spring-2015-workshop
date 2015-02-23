@@ -1,0 +1,16 @@
+<div class="col-xs-12">
+    <h1>Products</h1>
+
+    <div class="well" ng-hide="products">Loading, Please wait...</div>
+
+    <table class="table table-striped" ng-show="products">
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+        </tr>
+        <tr ng-repeat="product in products | orderBy : 'Name'" ng-click="details(product.Id)">
+            <td>{{product.Code}}</td>
+            <td>{{product.Name}}</td>
+        </tr>
+    </table>
+</div>
