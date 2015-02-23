@@ -1,8 +1,10 @@
 <div class="col-xs-12">
     <div class="well" ng-hide="product">Loading, Please wait...</div>
 
-    <div class="panel panel-default">
+    <div class="panel panel-default" ng-show="product">
         <div class="panel-heading"><h1>{{product.Name}}</h1></div>
         <div class="panel-body"><img ng-src="{{image}}"></div>
     </div>
+
+    <div class="well"><button class="btn btn-primary" ng-click="back()">&lt; Back</button></div>
 </div>
