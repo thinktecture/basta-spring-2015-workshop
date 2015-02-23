@@ -183,3 +183,7 @@ UpgradeLog*.htm
 FakesAssemblies/
 src/client/.idea
 src/client/bower_components
+project.xcworkspace
+xcuserdata
+src/client/cordova/platforms/*/www
+src/client/cordova/www
